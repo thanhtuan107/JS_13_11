@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="title">Quản lý tuyển sinh</div>
+        <div class="input-container">
+            <input type="number" id="diemChuan" placeholder="Điểm chuẩn">
+            <select id="khuVuc" class="Khuvuc">
+                <option selected>Chọn Khu vực</option>
+                <option value="2">A</option>
+                <option value="1">B</option>
+                <option value="0.5">C</option>
+            </select>
+            <select id="doiTuong" class="Khuvuc">
+                <option selected>Chọn Đối tượng</option>
+                <option value="2.5">1</option>
+                <option value="1.5">2</option>
+                <option value="1">3</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <input type="number" id="diemMon1" placeholder="Điểm môn thứ 1">
+            <input type="number" id="diemMon2" placeholder="Điểm môn thứ 2">
+            <input type="number" id="diemMon3" placeholder="Điểm môn thứ 3">
+        </div>
+        <button id="btn_result" class="result-button" >Kết Quả</button>
+        <p id="out_put"></p>
+    </div>
+    <script src="./bai1.js"></script>
+    <script src="./bai2.js"></script>
+    <script src="./bai3.js"></script>
+    <script src="./bai4.js"></script>
+  </body>
+</html>
