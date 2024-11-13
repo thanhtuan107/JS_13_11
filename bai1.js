@@ -1,8 +1,36 @@
+/**
+ * Quan li tuyển sinh
+ * 
+ * ĐẦU VÀO:
+ *  - Điểm chuẩn:
+ *  - Khu vực: A B C
+ *  - Đối tượng: 1 2 3 
+ *  - điểm môn 1:
+ *  - điểm môn 2:
+ *  - điểm môn 3:
+ * 
+ * XỬ LÍ:
+ *  -- Khu vực: A -> +2
+ *              B -> +1
+ *              C -> +0.5
+ * -- Đối tượng 1 -> +2.5
+ *              2 -> +1.5
+ *              3 -> +1
+ *  tạo biến tổng điểm => cộng lại
+ *  xét điều kiện:
+ *   có môn điểm 0 ->  TRƯỢT
+ *   tổng điểm >= điểm chuẩn ->  đậu.
+ *   tổng điểm < điểm chuẩn ->  trượt.
+ * 
+ * ĐẦU RA:
+ * kết quả xét tuyển + điểm số
+ */ 
+
 let btnResult = document.getElementById("btn_result");
 btnResult.onclick= function(){
     const diemChuan = document.getElementById("diemChuan").value*1;
-    const khuVuc = document.getElementById("khuVuc").value*1;
-    const doiTuong = document.getElementById("doiTuong").value*1;
+    const khuVuc = document.getElementById("khuVuc").value;
+    const doiTuong = document.getElementById("doiTuong").value;
     const diemMon1 = document.getElementById("diemMon1").value*1;
     const diemMon2 = document.getElementById("diemMon2").value*1;
     const diemMon3 = document.getElementById("diemMon3").value*1;
